@@ -1,10 +1,198 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="w-full h-screen flex items-center justify-center">
-		<img src="/web-construction.png" alt="web-image" class="max-w-6xl"/>
-	</main>
+  <main>
+    <section
+      id="header"
+      class="relative flex flex-col text-white h-[870px] w-full"
+    >
+      <div
+        class="absolute top-0 bottom-0 w-full h-full opacity-80 background z-[-2]"
+      >
+      </div>
+
+      <div class="absolute top-0 bottom-0 w-full -z-10">
+        <img
+          src="/header-bg.jpg"
+          alt="header-background"
+          class="h-full w-full object-fill"
+        />
+      </div>
+
+      <nav class="w-full flex py-5 px-16 text-lg text-white bg-transparent">
+        <div>
+          <img src="/logo.png" alt="logo" class="h-16 w-full" />
+        </div>
+
+        <div class="flex justify-center w-full">
+          <ul class="flex items-center gap-8 py-2">
+            <li>Home</li>
+            <li>Acerca de</li>
+            <li>Caracteristicas</li>
+            <li>Galeria</li>
+            <li>Resultados probados</li>
+            <li>Contacto</li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="flex pt-20 max-w-[1140px] w-full mx-auto">
+        <div class="w-2/4">
+          <img
+            src="/header-mobile.png"
+            alt="header-mobile"
+            class="h-auto w-full"
+          />
+        </div>
+
+        <div class="pt-24 pl-16">
+          <h1 class="text-6xl leading-[1.4em]">
+            Solución de bloqueo inteligente
+          </h1>
+          <p class="py-6">
+            Ofrecemos una solución integral para la gestión y control de la
+            instalación y desbloqueo de CEPOS.
+          </p>
+          <button
+            class="bg-white py-4 px-8 font-semibold text-sm text-[#FF5C26] rounded-[50px] mt-2"
+            >DESCARGAR VIDEO</button
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="py-52">
+      <div class="flex flex-col text-center items-center max-w-[900px] mx-auto">
+        <div class="flex flex-col gap-6 items-center">
+          <img src="/about-logo.png" alt="about-logo" class="h-14 w-14" />
+          <h5 class="text-[#8790af] text-sm font-medium">ACERCA DE APPCEPOS</h5>
+        </div>
+
+        <p class="text-[#512A6F] text-3xl py-12">
+          AppCepos reinventa la gestión para el ordenamiento vial, ofreciendo
+          una solución completa, con equipamiento de CEPOS y la gestión
+          inteligente a través de aplicaciones móviles. Nuestra solución
+          integrada provee un equipamiento sencillo que facilita la operación al
+          inspector de tránsito permitiéndole pasar más tiempo haciendo cumplir
+          las normas, gracias a que la instalación y liberación de los CEPOS es
+          rápida y fácil.
+        </p>
+
+        <p class="text-[#8790af] font-medium">2024</p>
+      </div>
+    </section>
+
+    <section class="relative flex">
+      <div class="relative bg-[#f5f6ff] py-32 w-7/12">
+        <div class="pl-48 pr-20">
+          <h5 class="text-[#8790af] text-sm font-medium mb-6">COMODIDAD</h5>
+          <h3 class="text-3xl mb-9">Aplicacion amigable para el usuario</h3>
+          <p class="leading-8 text-[#8790af]">
+            La aplicación permite en solo 2 pasos identificar al infractor,
+            obtener la información del propietario del vehiculo y activar el
+            bloqueo virtual del dispositivo capturando la información
+            georefernciada de la intervención.
+          </p>
+        </div>
+      </div>
+
+      <div class="absolute right-[20%] -top-[90px] z-10">
+        <img
+          src="/progress-phone.png"
+          alt="progress-phone"
+          class="h-full w-full"
+        />
+      </div>
+
+      <div>
+        <img src="/progress-bg.jpg" alt="progress-bg" />
+      </div>
+    </section>
+
+    <section class="relative bg-[#512A6F] max-h-[800px]">
+      <div class="flex flex-col pt-32 text-white">
+        <h3 class="text-3xl text-center">Caracteristicas</h3>
+
+        <div class="grid grid-cols-12 justify-center">
+          <div class="col-span-1"></div>
+          <div class="col-span-3 pt-20">
+            <ul class="flex flex-col gap-16 pl-24">
+              <li class="flex">
+                <div class="w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Rápido</p>
+                  <p>Manejo intuitivo</p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Instalación</p>
+                  <p>De facil despliegue</p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="min-w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Solución en la nube</p>
+                  <p>Información siempre al alcance.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-span-4 flex justify-center items-center translate-y-24">
+            <img
+              src="/feature-image.png"
+              alt="feature-image"
+              class="w-[360px]"
+            />
+          </div>
+
+          <div class="col-span-3 pt-20">
+            <ul class="flex flex-col gap-16">
+              <li class="flex">
+                <div class="w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Notificaciones</p>
+                  <p>Manten a tu equipo informado</p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Adaptable</p>
+                  <p>Desde cualquier dispositivo</p>
+                </div>
+              </li>
+
+              <li class="flex">
+                <div class="min-w-[70px] h-[70px] bg-white rounded-full mr-7"></div>
+                <div>
+                  <p class="text-lg mb-[10px]">Configurable</p>
+                  <p>Integración con los sistemas de tu empresa</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-1"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
 
+<!-- <main class="w-full h-screen flex items-center justify-center">
+	<img src="/web-construction.png" alt="web-image" class="max-w-6xl"/>
+</main> -->
+
+<style>
+  .background {
+    background: linear-gradient(45deg, #fff200 0%, #ff5c26 100%);
+  }
+</style>
