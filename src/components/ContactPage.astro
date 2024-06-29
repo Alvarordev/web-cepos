@@ -1,0 +1,65 @@
+---
+import Title from "./ui/Title.astro";
+---
+
+<section class="py-32 text-[#8790af]">
+  <div class="flex flex-col max-w-6xl mx-auto">
+    <div class="flex justify-center px-4">
+      <Title title="CONTÁCTANOS" />
+    </div>
+
+    <div class="grid grid-cols-12">
+      <div class="flex flex-col items-center col-span-4 px-4">
+        <div
+          class="relative h-20 w-20 mb-8 flex justify-center items-center text-white"
+          style={{
+            background: "linear-gradient(45deg, #fff200 0%, #FF5C26 100%)",
+            borderRadius: "100%",
+          }}
+        >
+          <div
+            class="absolute left-1 top-1 w-[calc(100%-8px)] h-[calc(100%-8px)] border-2 border-white rounded-full"
+          >
+          </div>
+          <span class="lnr lnr-map-marker text-xl"></span>
+        </div>
+        <p>Dirección</p>
+        <p>Cll. Alfredo Maldonado 654 Lima, Perú</p>
+      </div>
+      <div class="flex flex-col items-center col-span-4 px-4">
+        <div
+          class="relative h-20 w-20 mb-8 flex justify-center items-center text-white"
+          style={{
+            background: "linear-gradient(45deg, #fff200 0%, #FF5C26 100%)",
+            borderRadius: "100%",
+          }}
+        >
+        <span class="lnr lnr-phone-handset text-xl"></span>
+          <div
+            class="absolute left-1 top-1 w-[calc(100%-8px)] h-[calc(100%-8px)] border-2 border-white rounded-full"
+          >
+          </div>
+        </div>
+        <p>Teléfono</p>
+        <p>+51 913 597 337</p>
+      </div>
+      <div class="flex flex-col items-center col-span-4 px-4">
+        <div
+          class="relative h-20 w-20 mb-8 flex justify-center items-center text-white"
+          style={{
+            background: "linear-gradient(45deg, #fff200 0%, #FF5C26 100%)",
+            borderRadius: "100%",
+          }}
+        >
+        <span class="lnr lnr-envelope text-xl"></span>
+          <div
+            class="absolute left-1 top-1 w-[calc(100%-8px)] h-[calc(100%-8px)] border-2 border-white rounded-full"
+          >
+          </div>
+        </div>
+        <p>Email</p>
+        <p>ventas@solucionesinteligentescs.com</p>
+      </div>
+    </div>
+  </div>
+</section>

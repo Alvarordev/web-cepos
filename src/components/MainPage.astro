@@ -1,0 +1,57 @@
+---
+import Header from "./Header.astro";
+---
+
+<section id="home" class="relative flex flex-col text-white h-[870px] w-full">
+  <div
+    class="absolute top-0 bottom-0 w-full h-full opacity-80 background z-[-2]"
+  >
+  </div>
+
+  <div class="absolute top-0 bottom-0 w-full -z-10">
+    <img
+      src="/header-bg.jpg"
+      alt="header-background"
+      class="h-full w-full object-fill"
+    />
+  </div>
+
+  <Header />
+
+  <div class="flex pt-20 max-w-[1140px] w-full mx-auto">
+    <div class="w-2/4">
+      <img src="/header-mobile.png" alt="header-mobile" class="h-auto w-full" />
+    </div>
+
+    <div class="pt-24 pl-16">
+      <h1 class="text-6xl leading-[1.4em]">Solución de bloqueo inteligente</h1>
+      <p class="py-6 mb-6 leading-8">
+        Ofrecemos una solución integral para la gestión y control de la
+        instalación y desbloqueo de CEPOS.
+      </p>
+      <a
+        href="https://www.youtube.com/watch?v=oVHFyWHNOhM"
+        target="_blank"
+        class="bg-white py-[18px] px-[30px] text-sm text-[#FF5C26] rounded-[50px] hovering transition"
+      >
+        <span class="lnr lnr-download"></span>
+        <span class="pl-2 font-bold tracking-[1.5px]">DESCARGAR VIDEO</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .background {
+    background: linear-gradient(45deg, #fff200 0%, #ff5c26 100%);
+  }
+
+  .hovering:hover {
+    background: linear-gradient(45deg, #fff200 0%, #ff5c26 100%);
+    color: #fff
+  }
+
+  .transition {
+    transition: all 0.3s;
+  }
+</style>
